@@ -1,0 +1,48 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        maven {
+            url "https://oss.sonatype.org/content/repositories/snapshots/"
+        }
+        maven {
+            url 'https://dl.bintray.com/jetbrains/intellij-plugin-service'
+        }
+    }
+}
+
+plugins {
+    id 'org.jetbrains.intellij' version "0.4.21"
+}
+
+apply plugin: 'org.jetbrains.intellij'
+apply plugin: 'java'
+
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+
+intellij {
+    plugins 'java'
+    version '2020.3'  //debug version
+    updateSinceUntilBuild false
+}
+
+sourceCompatibility = 1.11
+targetCompatibility = 1.11
+
+repositories {
+    mavenCentral()
+    maven {
+        url "https://oss.sonatype.org/content/repositories/snapshots/"
+    }
+    maven {
+        url 'https://dl.bintray.com/jetbrains/intellij-plugin-service'
+    }
+    maven { url "https://www.jetbrains.com/intellij-repository/releases" }
+    maven { url "https://www.jetbrains.com/intellij-repository/snapshots" }
+}
+
+dependencies {
+    implementation 'org.apache.ant:ant:1.9.2'
+    implementation 'org.apache.commons:commons-lang3:3.10'
+    implementation 'org.apache.poi:poi:4.1.2:'
+    implementation 'org.apache.poi:poi-ooxml:4.1.2'
+}

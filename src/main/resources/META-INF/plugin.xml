@@ -1,0 +1,55 @@
+<idea-plugin>
+    <id>com.fz.strings.plugin.id</id>
+    <name>AndroidStringsTool</name>
+    <version>1.0.9</version>
+    <vendor email="peihua8858@gmail.com" url="https://github.com/peihua8858">dingpeihua</vendor>
+
+    <description><![CDATA[
+       AndroidStringsTool is plugin  for Convert android multilingual to excel or convert excel to android multilingual.
+    ]]></description>
+    <depends>com.intellij.modules.lang</depends>
+    <depends>com.intellij.modules.java</depends>
+    <change-notes><![CDATA[
+      <i>1.0.9变更</i>
+        <ul>
+            <li>修复序列化失败的问题。</li>
+        </ul>
+        <i>1.0.8变更</i>
+        <ul>
+            <li>修复“<”或“>”标签时，统一转换成CDATA"。</li>
+        </ul>
+        <i>1.0.7变更</i>
+        <ul>
+            <li>修复正则表达式无法匹配错误的问题。</li>
+        </ul>
+        <i>1.0.6变更</i>
+        <ul>
+            <li>调整弹窗大小自适应，解决修改idea字体时按钮不可见的问题。</li>
+        </ul>
+    ]]>
+    </change-notes>
+
+    <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+    <idea-version since-build="181.0"/>
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+        <action id="StringsTool" class="com.fz.plugin.MainAction"
+                text="StringsTool" description="strings convert to excel" icon="/icons/ic_menu_small.svg">
+            <add-to-group group-id="ToolsMenu" relative-to-action="GenerateJavadoc" anchor="after"/>
+            <add-to-group group-id="ProjectViewPopupMenu" anchor="after" relative-to-action="ReplaceInPath"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="ctrl alt shift X" replace-all="true"/>
+            <!-- Except to the "Mac OS X" keymap and its children -->
+            <keyboard-shortcut keymap="Mac OS X" first-keystroke="ctrl alt shift X" replace-all="true"/>
+            <!-- The "Mac OS X 10.5+" keymap and its children will have only this keyboard shortcut for this action.  -->
+            <keyboard-shortcut keymap="Mac OS X 10.5+" first-keystroke="ctrl alt shift X" second-keystroke=""
+                               replace-all="true"/>
+            <mouse-shortcut keymap="$default" keystroke="control button3 doubleClick"/>
+        </action>
+    </actions>
+</idea-plugin>
