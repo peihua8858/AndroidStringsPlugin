@@ -12,6 +12,7 @@ buildscript {
 
 plugins {
     id 'org.jetbrains.intellij' version "0.4.21"
+    id 'org.jetbrains.kotlin.jvm' version "1.8.10"
 }
 
 apply plugin: 'org.jetbrains.intellij'
@@ -21,7 +22,7 @@ apply plugin: 'java'
 
 intellij {
     plugins 'java'
-    version '2020.3'  //debug version
+    version '2021.1'  //debug version
     updateSinceUntilBuild false
 }
 
@@ -45,4 +46,7 @@ dependencies {
     implementation 'org.apache.commons:commons-lang3:3.10'
     implementation 'org.apache.poi:poi:4.1.2:'
     implementation 'org.apache.poi:poi-ooxml:4.1.2'
+    implementation "com.google.code.gson:gson:2.10"
+    implementation "com.squareup.okhttp3:okhttp:4.10.0"
+    implementation "com.squareup.okio:okio:3.2.0"
 }

@@ -47,8 +47,8 @@
             <!-- Except to the "Mac OS X" keymap and its children -->
             <keyboard-shortcut keymap="Mac OS X" first-keystroke="ctrl alt shift X" replace-all="true"/>
             <!-- The "Mac OS X 10.5+" keymap and its children will have only this keyboard shortcut for this action.  -->
-            <keyboard-shortcut keymap="Mac OS X 10.5+" first-keystroke="ctrl alt shift X" second-keystroke=""
-                               replace-all="true"/>
+<!--            <keyboard-shortcut keymap="Mac OS X 10.5+" first-keystroke="ctrl alt shift X" second-keystroke=""-->
+<!--                               replace-all="true"/>-->
             <mouse-shortcut keymap="$default" keystroke="control button3 doubleClick"/>
         </action>
     </actions>
