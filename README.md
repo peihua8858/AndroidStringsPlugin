@@ -9,11 +9,11 @@
 ## 演示效果
 |          导出Excel        | 
 |:----------------------:|
-| ![](https://plugins.jetbrains.com/files/14444/screenshot_22132.png) |
+| ![](images/image1.gif) |
 
 |          生成strings.xml        |
 |:----------------------:|
-| ![](https://plugins.jetbrains.com/files/14444/screenshot_22133.png) |
+| ![](images/image2.gif) |
 ## License
 ```sh
 Copyright 2023 peihua
