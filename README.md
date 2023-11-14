@@ -9,7 +9,7 @@
 ## 演示效果
 |          导出Excel        |          生成strings.xml        |
 |:----------------------:|:----------------------:|
-| ![](images/image.gif) | ![](images/image2.gif) |
+| ![](https://plugins.jetbrains.com/files/14444/screenshot_22132.png) | ![](https://plugins.jetbrains.com/files/14444/screenshot_22133.png) |
 
 ## License
 ```sh
