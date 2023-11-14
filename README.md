@@ -4,7 +4,7 @@
 
 [[Marketplace](https://plugins.jetbrains.com/plugin/14444-androidstringstool)]
 [![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg)](https://github.com/peihua8858)
-[![Star](https://img.shields.io/github/stars/peihua8858/CountDownTimer.svg)](https://github.com/peihua8858/CountDownTimer)
+[![Star](https://img.shields.io/github/stars/peihua8858/AndroidStringsPlugin.svg)](https://github.com/peihua8858/AndroidStringsPlugin)
 
 ## 演示效果
 |          导出Excel        |
