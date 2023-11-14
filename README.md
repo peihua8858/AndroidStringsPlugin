@@ -7,13 +7,11 @@
 [![Star](https://img.shields.io/github/stars/peihua8858/CountDownTimer.svg)](https://github.com/peihua8858/CountDownTimer)
 
 ## 演示效果
-|          导出Excel        | 
-|:----------------------:|
-| ![](images/image1.gif) |
+|          导出Excel        |          生成strings.xml        |
+|:----------------------:| :----------------------:|
+| ![](/images/image1.gif) |  ![](/images/image2.gif) |
 
-|          生成strings.xml        |
-|:----------------------:|
-| ![](images/image2.gif) |
+
 ## License
 ```sh
 Copyright 2023 peihua
