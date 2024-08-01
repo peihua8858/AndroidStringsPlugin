@@ -8,7 +8,7 @@
        AndroidStringsTool is plugin  for Convert android multilingual to excel or convert excel to android multilingual.
     ]]></description>
     <depends>com.intellij.modules.lang</depends>
-    <depends>com.intellij.modules.java</depends>
+<!--    <depends>com.intellij.modules.java</depends>-->
     <change-notes><![CDATA[
       <i>1.0.9变更</i>
         <ul>
